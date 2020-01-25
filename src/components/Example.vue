@@ -7,7 +7,12 @@
 <script>
     export default {
         name: "Example",
-        props: ['todo']
+        props: ['todo'],
+        data() {
+            return {
+                name: 'Madiyar'
+            }
+        }
     }
 </script>
 
