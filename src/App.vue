@@ -1,40 +1,46 @@
 <template>
   <div id="app">
-    <p> {{ message }} </p>
-    <button @click="reverseMessage"> Кликни братан!</button>
+    <div class="main-wrapper">
+      <Header />
+      <MenuLinks />
+    </div>
 
-
-    <input type="text" v-model="message">
   </div>
 </template>
 
 <script>
+  import Header from "./components/Header";
+  import MenuLinks from "./components/MenuLinks";
 
 export default {
-  el: '#app',
   data() {
     return {
-      message: 'Привет , Vue JS'
+      click: 0,
     }
   },
-  methods: {
-    reverseMessage: function () {
-      setInterval(() => {
-        this.message = this.message.split('').reverse().join('');
-      }, 300)
-    }
+  components: {
+    Header,
+    MenuLinks
   }
-}
+ }
 
 </script>
 
-<style>
+<style scoped>
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background: url("../../vue-my-portfolio/src/assets/main-background.png") no-repeat;
+  z-index: 1;
+  position: relative;
+  min-height: 100vh;
 }
+
+  .main-wrapper {
+    position: relative;
+    min-height: 100vh;
+    background-color: rgba(13, 10, 10, 0.8);
+  }
+
 </style>
+
