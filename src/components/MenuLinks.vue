@@ -4,7 +4,7 @@
             <li><a href="#">Обо мне</a></li>
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Навыки</a></li>
-            <li><a href="#">Где меня найти</a></li>
+            <li><a href="#">Мои работы</a></li>
 
         </ul>
     </nav>
@@ -19,7 +19,7 @@
 <style scoped>
     li {
         list-style: none;
-        margin-top: 90px;
+        margin-top: 100px;
     }
 
     a {
@@ -45,9 +45,9 @@
         content: "";
         position: absolute;
         top: 50%;
-        left: 20px;
+        left: 19px;
         transform: translateY(-50%);
-        width: 2px;
+        width: 3px;
         height: 70%;
         max-height: 750px;
         background-color: white;
@@ -57,14 +57,16 @@
 
     li::before {
         content: '';
+        position: relative;
+        z-index: 11;
+        cursor: pointer;
         width: 7px;
         height: 7px;
         border-radius: 100%;
-        box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0);
-        background: white;
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1);
+        background: #0995B6;
         display: inline-block;
-        position: relative;
-        top: -1px;
+        top: 0;
         right: 23px;
         transition: 0.3s;
     }
@@ -72,6 +74,9 @@
     li::before:hover {
         background: #0995B6;
         opacity: 0.9;
+        -webkit-box-shadow: 10px 10px 5px -2px rgba(204,204,204,1);
+        -moz-box-shadow: 10px 10px 5px -2px rgba(204,204,204,1);
+        box-shadow: 10px 10px 5px -2px rgba(204,204,204,1);
     }
 
 

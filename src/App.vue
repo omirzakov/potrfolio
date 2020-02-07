@@ -2,7 +2,10 @@
   <div id="app">
     <div class="main-wrapper">
       <Header />
+      <div class="main-body">
       <MenuLinks />
+      <AboutMe />
+      </div>
     </div>
 
   </div>
@@ -11,6 +14,7 @@
 <script>
   import Header from "./components/Header";
   import MenuLinks from "./components/MenuLinks";
+  import AboutMe from "./components/AboutMe";
 
 export default {
   data() {
@@ -20,7 +24,8 @@ export default {
   },
   components: {
     Header,
-    MenuLinks
+    MenuLinks,
+    AboutMe
   }
  }
 
@@ -40,6 +45,10 @@ export default {
     position: relative;
     min-height: 100vh;
     background-color: rgba(13, 10, 10, 0.8);
+  }
+
+  .main-body {
+    display: flex;
   }
 
 </style>
