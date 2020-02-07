@@ -4,7 +4,9 @@
       <Header />
       <div class="main-body">
       <MenuLinks />
-      <AboutMe />
+        <transition name="component-fade" mode="out-in">
+            <AboutMe  />
+        </transition>
       </div>
     </div>
 
@@ -25,7 +27,7 @@ export default {
   components: {
     Header,
     MenuLinks,
-    AboutMe
+    AboutMe,
   }
  }
 

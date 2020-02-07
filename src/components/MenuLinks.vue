@@ -1,18 +1,34 @@
 <template>
     <nav>
-        <ul>
-            <li><a href="#">Обо мне</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Навыки</a></li>
-            <li><a href="#">Мои работы</a></li>
-
-        </ul>
+        <transition name="component-fade" mode="out-in" >
+            <ul>
+                <li><a href="#" @click="removeMain">Обо мне</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Навыки</a></li>
+                <li><a href="#">Мои работы</a></li>
+            </ul>
+        </transition>
     </nav>
 </template>
 
 <script>
+
+
     export default {
-        name: "MenuLinks"
+        name: "MenuLinks",
+        data() {
+            return {
+                showAboutMe: true,
+            }
+        },
+        components: {
+        },
+        methods: {
+            removeMain: function() {
+                this.showAboutMe = false;
+                alert('1')
+            },
+        }
     }
 </script>
 
