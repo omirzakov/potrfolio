@@ -8,7 +8,7 @@
         <div class="title">
             <p>Madiyar Omirzakov <br> <abbr>Front-end разработчик</abbr></p>
             <div class="my-info">
-                Привет, меня зовут Мадияр.  <br> Я занимаюсь разработкой сайтов и делаю это очень профессионально. <br>
+                Привет, меня зовут Мадияр  - Алматы, Казахстан  <br> Я занимаюсь разработкой сайтов и делаю это очень профессионально <br>
                 Любой начатый проект довожу до конца, постоянно совершенствую свой профессиональный уровень
             </div>
 
@@ -71,11 +71,11 @@
 
 
     .title {
-        margin-left: 120px;
+        margin-left: 50px;
     }
 
     .about-me {
-        margin-left: 40px;
+        margin-left: 120px;
     }
 
     .title p {
@@ -115,9 +115,10 @@
     .title .my-info {
         font-family: 'Rubik', sans-serif;
         color: white;
-        margin-top: 40px;
+        margin-top: 50px;
         line-height: 30px;
     }
+
 
     .about-me__header {
         display: flex;
