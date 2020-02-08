@@ -1,24 +1,16 @@
-# vue-my-portfolio
+# Сайт портфолио на Vue
 
-## Project setup
+## Имеется 4 раздела
 ```
-npm install
+Обо мне
 ```
-
-### Compiles and hot-reloads for development
 ```
-npm run serve
+Контакты
 ```
-
-### Compiles and minifies for production
 ```
-npm run build
+Работы
 ```
-
-### Lints and fixes files
 ```
-npm run lint
+Знания
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
