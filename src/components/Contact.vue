@@ -1,8 +1,16 @@
 <template>
     <div class="contact">
-        <h1>Мои контакты</h1>
-        <div class="map-field">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d727.2042035712768!2d76.90337993696413!3d43.192354414858606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1581170519513!5m2!1sru!2skz" width="600px" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div class="mobile-field">
+            <div class="mobile-numbers">
+                <p>+7(776)-288-49-55</p>
+                <p>+7(776)-153-44-76</p>
+                <hr width="50%">
+                <div class="home-contact">
+                    <p>International Information Technology University</p>
+                    <p>Казахфильм 8 - 88 (г. Алматы)</p>
+                    <a href="https://mail.google.com/mail/u/0/#search/huistowns%40gmail.com" target="_blank">huistowns@gmail.com</a>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -15,19 +23,45 @@
 
 <style scoped>
     .contact {
-        margin-left: 120px;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
+
+
     * {
         color: white;
         font-family: 'Rubik', sans-serif;
     }
 
-    .map-field {
+    .mobile-numbers {
+        letter-spacing: 4px;
+        font-size: 20px;
+    }
+
+    .map-field p {
         text-align: center;
-        width: 100%;
-        opacity: 0.9;
+    }
+
+    .mobile-numbers > p:nth-child(1) {
+        margin-top: 50px;
+        color: darksalmon;
+    }
+
+    .mobile-numbers > p:nth-child(2) {
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+
+
+    .home-contact {
+        margin-top: 40px;
+        letter-spacing: 2px;
+        line-height: 40px;
+    }
+
+    .home-contact a {
+        color: crimson;
+        text-decoration: none;
     }
 </style>

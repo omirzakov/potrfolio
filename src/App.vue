@@ -15,7 +15,7 @@
         </nav>
         </div>
       </div>
-        <transition name="router-anim" >
+        <transition name="router-anim" enter-active-class="animated zoomIn">
           <router-view />
         </transition>
       </div>
@@ -30,11 +30,12 @@
 export default {
   data() {
     return {
+      prevHeight: 0,
     }
   },
   components: {
     Header,
-  }
+  },
  }
 
 </script>
@@ -50,11 +51,14 @@ export default {
   min-height: 100vh;
 }
 
+
   .main-wrapper {
     position: relative;
     min-height: 100vh;
     background-color: rgba(13, 10, 10, 0.8);
   }
+
+
 
   .main-body {
     display: flex;
