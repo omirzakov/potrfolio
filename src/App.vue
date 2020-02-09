@@ -7,10 +7,10 @@
         <div class="nav">
         <nav>
           <ul>
-            <li><router-link to="/about">Обо мне</router-link></li>
-            <li><router-link to="/contact">Контакты</router-link></li>
-            <li><router-link to="/skills">Навыки</router-link></li>
-            <li><router-link to="/jobs">Мои работы</router-link></li>
+            <li><router-link to="/about" exact>Обо мне</router-link></li>
+            <li><router-link to="/contact" exact>Контакты</router-link></li>
+            <li><router-link to="/skills" exact>Навыки</router-link></li>
+            <li><router-link to="/jobs" exact>Мои работы</router-link></li>
           </ul>
         </nav>
         </div>

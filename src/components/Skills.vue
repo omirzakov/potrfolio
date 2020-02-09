@@ -2,28 +2,28 @@
     <div class="skills">
 
         <div class="cart-field">
-            <div class="cart">
+            <div class="cart" title="C++">
                 <img src="./icons/icons8-c++-100.png" alt="">
             </div>
-            <div class="cart">
+            <div class="cart" title="Bootstrap">
                 <img src="./icons/icons8-bootstrap-100.png" alt="">
             </div>
-            <div class="cart">
+            <div class="cart" title="JS">
                 <img src="./icons/icons8-javascript-100.png" alt="">
             </div>
-            <div class="cart">
+            <div class="cart" title="django">
                 <img src="./icons/icons8-django-100.png" alt="">
             </div>
-            <div class="cart">
+            <div class="cart" title="VUE">
                 <img src="./icons/icons8-vue-js-100.png" alt="">
             </div>
-            <div class="cart">
+            <div class="cart" title="java">
                 <img src="./icons/icons8-java-100.png" alt="">
             </div>
-            <div class="cart">
+            <div class="cart" title="CSS3">
                 <img src="./icons/icons8-css3-100.png" alt="">
             </div>
-            <div class="cart">
+            <div class="cart" title="Python">
                 <img src="./icons/icons8-python-100.png" alt="">
             </div>
         </div>

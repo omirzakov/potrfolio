@@ -6,10 +6,14 @@
                 <p>+7(776)-153-44-76</p>
                 <hr width="50%">
                 <div class="home-contact">
-                    <p>International Information Technology University</p>
-                    <p>Казахфильм 8 - 88 (г. Алматы)</p>
+                    <p>IITU | CSSE - 1805</p>
                     <a href="https://mail.google.com/mail/u/0/#search/huistowns%40gmail.com" target="_blank">huistowns@gmail.com</a>
+                    <p>Казахфильм 8 - 88 (г. Алматы)</p>
+                    <br>
                 </div>
+            </div>
+            <div class="home-address">
+                <img src="./icons/address.png" alt="Адрес" width = "500px">
             </div>
         </div>
     </div>
@@ -26,6 +30,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
 
@@ -34,9 +39,19 @@
         font-family: 'Rubik', sans-serif;
     }
 
+    .mobile-field {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 120px;
+    }
+
     .mobile-numbers {
         letter-spacing: 4px;
         font-size: 20px;
+        margin-top: -20px;
+        margin-right: -40px;
+
     }
 
     .map-field p {
@@ -63,5 +78,9 @@
     .home-contact a {
         color: crimson;
         text-decoration: none;
+    }
+
+    .home-address {
+        margin-left: -20px;
     }
 </style>
