@@ -7,13 +7,13 @@
                 <hr width="50%">
                 <div class="home-contact">
                     <p>IITU | CSSE - 1805</p>
-                    <a href="https://mail.google.com/mail/u/0/#search/huistowns%40gmail.com" target="_blank">huistowns@gmail.com</a>
+                    <a href="https://mail.google.com/mail/u/0/#search/huistowns%40gmail.com" target="_blank" title="gmail почта">huistowns@gmail.com</a>
                     <p>Казахфильм 8 - 88 (г. Алматы)</p>
                     <br>
                 </div>
             </div>
             <div class="home-address">
-                <img src="./icons/address.png" alt="Адрес" width = "500px">
+                <img src="./icons/address.png" alt="Адрес" width = "500px" title="Казахфильм 8-88">
             </div>
         </div>
     </div>
@@ -60,7 +60,7 @@
 
     .mobile-numbers > p:nth-child(1) {
         margin-top: 50px;
-        color: darksalmon;
+        color: yellow;
     }
 
     .mobile-numbers > p:nth-child(2) {
