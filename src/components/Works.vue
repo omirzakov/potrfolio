@@ -42,23 +42,31 @@
         name: "Works",
         methods: {
             showInfo: function () {
-                let cartInfo = document.querySelector('.cart__information');
-                cartInfo.style.display = 'flex';
-                cartInfo.style.justifyContent = 'space-between';
-                cartInfo.style.padding = '5px 10px 0 10px '
+                let cartInfo = document.querySelectorAll('.cart__information');
+                for (let i = 0; i < cartInfo.length; i++) {
+                    cartInfo[i].style.display = 'flex';
+                    cartInfo[i].style.justifyContent = 'space-between';
+                    cartInfo[i].style.padding = '5px 10px 0 10px '
+                }
             },
             hideInfo: function () {
-                let cartInfo = document.querySelector('.cart__information');
-                cartInfo.style.display = 'none';
+                let cartInfo = document.querySelectorAll('.cart__information');
+                for (let i = 0; i < cartInfo.length; i++) {
+                    cartInfo[i].style.display = 'none';
+                }
             },
             modalWindowOpen: function () {
-                let modalWindow = document.querySelector('.modal-window');
-                modalWindow.style.display = 'block';
-                document.body.style.background = 'black';
+                let modalWindow = document.querySelectorAll('.modal-window');
+                for (let i = 0; i < modalWindow.length; i++) {
+                    modalWindow[i].style.display = 'block';
+                    document.body.style.background = 'black';
+                }
             },
             closeModalWindow: function () {
-                let closeWindow = document.querySelector('.modal-window');
-                closeWindow.style.display = 'none';
+                let closeWindow = document.querySelectorAll('.modal-window');
+                for (let i = 0; i < closeWindow.length; i++) {
+                    closeWindow[i].style.display = 'none';
+                }
 
             }
         }
